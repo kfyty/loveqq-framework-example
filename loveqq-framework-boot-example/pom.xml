@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.kfyty</groupId>
+        <artifactId>loveqq-framework-example</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>loveqq-framework-boot-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot</artifactId>
+            <version>${loveqq.framework.version}</version>
+        </dependency>
+
+        <!-- 抽象的 mvc 核心包 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-mvc-core</artifactId>
+            <version>${loveqq.framework.version}</version>
+        </dependency>
+
+        <!-- yaml 支持，默认使用 properties 文件，如果使用 yaml 需自行引入依赖 -->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+        </dependency>
+
+        <!-- logback 启动器 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot-starter-logback</artifactId>
+            <version>${loveqq.framework.version}</version>
+        </dependency>
+
+        <!-- 数据源启动器，默认是 HikariCP -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot-starter-datasource</artifactId>
+            <version>${loveqq.framework.version}</version>
+        </dependency>
+
+        <!-- redisson 启动器 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot-starter-redisson</artifactId>
+            <version>${loveqq.framework.version}</version>
+        </dependency>
+
+        <!-- web 示例 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-framework-web-example</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 数据库驱动需自行引入 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+</project>

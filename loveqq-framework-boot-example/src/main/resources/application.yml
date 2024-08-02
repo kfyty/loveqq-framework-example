@@ -1,0 +1,13 @@
+k:
+  application:
+    # 应用名称，注册到注册中心可使用
+    name: loveqq-framework-example
+  config:
+    # 引入其他配置
+    include: application-ds.yml,application-web.yml
+
+logging:
+  level:
+    # 日志级别配置
+    com.kfyty.loveqq.framework: info
+    com.kfyty.loveqq.framework.boot.mybatis.example.dao: debug

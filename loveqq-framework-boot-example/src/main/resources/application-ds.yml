@@ -1,0 +1,10 @@
+k:
+  config:
+    include: application-redis.yml
+  datasource:
+    # 配置数据源，详情可查看 DataSourceAutoConfiguration
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: www.kfyty.com
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true

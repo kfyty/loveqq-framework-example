@@ -1,0 +1,11 @@
+k:
+  redis:
+    redisson:
+      model: single                         # 单机模式，详情可查看 RedissonAutoConfiguration
+      reactive: true                        # 开启响应式客户端
+      single:
+        address: redis://127.0.0.1:6379
+        database: 0
+        password: qwer1234
+        timeout: 6000
+        connectionMinimumIdleSize: 10

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+    <div>
+        <form id="form-user-edit" th:object="${user}">
+            <input id="id"  type="hidden" th:value="*{id}" />
+            <input id="username"  type="text" th:field="*{username}" />
+            <input id="status" type="checkbox" th:checked="${user.status == 0 ? true : false}">
+        </form>
+    </div>
+</body>
+</html>
