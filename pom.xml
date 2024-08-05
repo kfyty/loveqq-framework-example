@@ -20,5 +20,6 @@
         <module>loveqq-framework-mybatis-example</module>
         <module>loveqq-framework-feign-example</module>
         <module>loveqq-framework-boot-common</module>
+        <module>loveqq-framework-quartz-example</module>
     </modules>
 </project>

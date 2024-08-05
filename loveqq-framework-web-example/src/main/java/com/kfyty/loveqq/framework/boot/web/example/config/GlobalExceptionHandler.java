@@ -13,7 +13,6 @@ import com.kfyty.loveqq.framework.web.core.http.ServerRequest;
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {
-
     /**
      * 异常处理
      *
