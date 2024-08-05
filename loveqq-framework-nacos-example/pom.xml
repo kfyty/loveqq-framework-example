@@ -9,19 +9,27 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>loveqq-framework-mybatis-example</artifactId>
+    <artifactId>loveqq-framework-nacos-example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <dependencies>
+        <!-- nacos 服务发现中心 -->
         <dependency>
             <groupId>com.kfyty</groupId>
-            <artifactId>loveqq-framework-boot-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>loveqq-boot-starter-discovery-nacos</artifactId>
+            <version>${loveqq.framework.version}</version>
         </dependency>
 
+        <!-- nacos 配置中心 -->
         <dependency>
             <groupId>com.kfyty</groupId>
-            <artifactId>loveqq-boot-starter-mybatis</artifactId>
+            <artifactId>loveqq-boot-starter-config-nacos</artifactId>
             <version>${loveqq.framework.version}</version>
         </dependency>
     </dependencies>

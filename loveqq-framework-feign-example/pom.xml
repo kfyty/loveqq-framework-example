@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>loveqq-framework-mybatis-example</artifactId>
+    <artifactId>loveqq-framework-feign-example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -21,7 +21,15 @@
 
         <dependency>
             <groupId>com.kfyty</groupId>
-            <artifactId>loveqq-boot-starter-mybatis</artifactId>
+            <artifactId>loveqq-mvc-core</artifactId>
+            <version>${loveqq.framework.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- feign 启动器 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot-starter-feign</artifactId>
             <version>${loveqq.framework.version}</version>
         </dependency>
     </dependencies>

@@ -20,6 +20,13 @@
             <version>${loveqq.framework.version}</version>
         </dependency>
 
+        <!-- jsr 校验启动器 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot-starter-validator</artifactId>
+            <version>${loveqq.framework.version}</version>
+        </dependency>
+
         <!-- reactor-netty 服务器，同时支持命令式/响应式编程范式 -->
         <dependency>
             <groupId>com.kfyty</groupId>
@@ -31,6 +38,13 @@
         <dependency>
             <groupId>com.kfyty</groupId>
             <artifactId>loveqq-boot-starter-thymeleaf</artifactId>
+            <version>${loveqq.framework.version}</version>
+        </dependency>
+
+        <!-- java mail 启动器 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot-starter-mail</artifactId>
             <version>${loveqq.framework.version}</version>
         </dependency>
 

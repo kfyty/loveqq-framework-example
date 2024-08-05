@@ -1,0 +1,15 @@
+k:
+  mail:
+    host: smtp.qq.com
+    password: uiddbcextcrdbahh
+    port: 465
+    protocol: smtp
+    username: 944547266@qq.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          socketFactory:
+            port: 465
+            fallback: false
+            class: javax.net.ssl.SSLSocketFactory

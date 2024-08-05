@@ -1,12 +1,12 @@
 k:
   config:
     # 引入其他配置
-    include: application-mybatis.yml
+    include: application-mybatis.yml,application-mail.yml
   server:
     port: 8080
   mvc:
     netty:
-      accessLog: true
+      accessLog: false
 
 template:
   thymeleaf:

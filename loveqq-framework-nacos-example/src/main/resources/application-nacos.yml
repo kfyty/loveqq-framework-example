@@ -1,0 +1,16 @@
+k:
+  nacos:
+    discovery:
+      username: nacos                                         # nacos 控制台用户名
+      password: 123456                                        # nacos 控制台密码
+      serverAddr: 127.0.0.1:8848                              # 服务发现中心地址，具体可查看 NacosDiscoveryAutoConfiguration
+      namespace: 31f714e4-f8d3-440a-bf6f-d9e79d2af2f7
+    config:
+      username: ${k.nacos.discovery.username}
+      password: ${k.nacos.discovery.password}
+      serverAddr: ${k.nacos.discovery.serverAddr}             # 配置中心地址，引用服务发现地址，具体可查看 NacosConfigAutoConfiguration
+      namespace: ${k.nacos.discovery.namespace}
+      fileExtension: yml                                      # 指定配置文件扩展后缀
+      extensionConfigs:                                       # 指定具体的配置 id，默认支持自动刷新
+        - group: DEFAULT_GROUP
+          dataId: application-dev.yml

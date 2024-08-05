@@ -15,7 +15,10 @@
 
     <modules>
         <module>loveqq-framework-boot-example</module>
+        <module>loveqq-framework-nacos-example</module>
         <module>loveqq-framework-web-example</module>
         <module>loveqq-framework-mybatis-example</module>
+        <module>loveqq-framework-feign-example</module>
+        <module>loveqq-framework-boot-common</module>
     </modules>
 </project>

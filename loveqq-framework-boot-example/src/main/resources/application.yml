@@ -4,7 +4,7 @@ k:
     name: loveqq-framework-example
   config:
     # 引入其他配置
-    include: application-ds.yml,application-web.yml
+    include: application-nacos.yml,application-ds.yml,application-web.yml
 
 logging:
   level:
