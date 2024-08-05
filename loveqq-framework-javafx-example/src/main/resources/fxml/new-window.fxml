@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="newWindow" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.kfyty.loveqq.framework.boot.javafx.example.NewWindowController">
+    <children>
+        <Button layoutX="400.0" layoutY="100.0" text="添加" onAction="#addDeptName" />
+        <Button layoutX="400.0" layoutY="150.0" text="删除" onAction="#delChoose" />
+        <Button layoutX="400.0" layoutY="200.0" text="选择" onAction="#closeWindow" />
+        <ListView fx:id="deptList" layoutX="42.0" layoutY="51.0" prefHeight="275.0" prefWidth="334.0"/>
+    </children>
+</AnchorPane>

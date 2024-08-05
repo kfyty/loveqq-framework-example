@@ -21,5 +21,6 @@
         <module>loveqq-framework-feign-example</module>
         <module>loveqq-framework-boot-common</module>
         <module>loveqq-framework-quartz-example</module>
+        <module>loveqq-framework-javafx-example</module>
     </modules>
 </project>
