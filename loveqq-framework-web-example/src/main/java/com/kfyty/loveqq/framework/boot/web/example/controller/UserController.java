@@ -11,6 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,6 +26,17 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserMapper userMapper;
+
+    /**
+     * sse
+     * sse 请求不能使用 {@link Cacheable} 注解
+     */
+    @GetMapping(produces = "text/event-stream")
+    public Flux<User> sse() {
+        return Flux.fromIterable(Arrays.asList(1L, 2L, 3L))
+                .delayElements(Duration.ofSeconds(1))
+                .map(User::new);
+    }
 
     /**
      * 查询第一个用户，并且缓存 3 秒
