@@ -1,5 +1,6 @@
 package com.kfyty.loveqq.framework.boot.mybatis.example.model;
 
+import com.kfyty.loveqq.framework.boot.validator.annotation.Condition;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,9 +18,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User {
+    @Condition(value = "id > 0", message = "id 必须大于0")
     private Long id;
+
     private String username;
+
     private Integer status;
+
     private LocalDateTime createTime;
 
     public User(Long id) {

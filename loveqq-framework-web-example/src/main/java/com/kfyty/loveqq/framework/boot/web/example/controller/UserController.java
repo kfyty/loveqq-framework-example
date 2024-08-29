@@ -7,6 +7,7 @@ import com.kfyty.loveqq.framework.data.cache.core.annotation.CacheClear;
 import com.kfyty.loveqq.framework.data.cache.core.annotation.Cacheable;
 import com.kfyty.loveqq.framework.web.core.annotation.GetMapping;
 import com.kfyty.loveqq.framework.web.core.annotation.RestController;
+import jakarta.validation.Valid;
 import org.springframework.transaction.annotation.Transactional;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -22,6 +23,7 @@ import java.util.List;
  * @date 2024/8/2 17:07
  * @email kfyty725@hotmail.com
  */
+@Valid
 @RestController
 public class UserController {
     @Autowired
@@ -36,6 +38,17 @@ public class UserController {
         return Flux.fromIterable(Arrays.asList(1L, 2L, 3L))
                 .delayElements(Duration.ofSeconds(1))
                 .map(User::new);
+    }
+
+    /**
+     * jsr 校验测试
+     *
+     * @param user user
+     * @return user
+     */
+    @GetMapping
+    public User test(@Valid User user) {
+        return user;
     }
 
     /**

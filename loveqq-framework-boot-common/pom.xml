@@ -11,4 +11,14 @@
 
     <artifactId>loveqq-framework-boot-common</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- jsr 校验启动器 -->
+        <dependency>
+            <groupId>com.kfyty</groupId>
+            <artifactId>loveqq-boot-starter-validator</artifactId>
+            <version>${loveqq.framework.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>
