@@ -4,6 +4,7 @@ k:
     include: application-mybatis.yml,application-mail.yml
   server:
     port: 8080
+    virtualThread: true
   mvc:
     netty:
       accessLog: false
