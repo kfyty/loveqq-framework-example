@@ -7,6 +7,7 @@ import com.kfyty.loveqq.framework.core.event.GenericApplicationEvent;
 import com.kfyty.loveqq.framework.core.lang.Lazy;
 import com.kfyty.loveqq.framework.javafx.core.AbstractController;
 import com.kfyty.loveqq.framework.javafx.core.annotation.FController;
+import com.kfyty.loveqq.framework.javafx.core.annotation.FPrototypeScope;
 import com.kfyty.loveqq.framework.javafx.core.annotation.FView;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
@@ -23,6 +24,8 @@ import lombok.extern.slf4j.Slf4j;
  * 添加 {@link com.kfyty.loveqq.framework.javafx.core.annotation.FPrototypeScope} 注解可标识一个原型作用域，每次新开窗口都创建新的窗口
  */
 @Slf4j
+@EventListener
+@FPrototypeScope
 @FController(value = "root", path = "/fxml/hello-view.fxml", title = "hello", main = true)
 public class HelloController extends AbstractController<FlowPane> {
     /**
