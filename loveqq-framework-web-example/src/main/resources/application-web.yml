@@ -1,7 +1,7 @@
 k:
   config:
     # 引入其他配置
-    include: application-mybatis.yml,application-mail.yml
+    include: application-mybatis.yml,application-mail.yml,application-dubbo.yml
   server:
     port: 8080
     virtualThread: true

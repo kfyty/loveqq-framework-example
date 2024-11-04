@@ -1,0 +1,23 @@
+dubbo:
+  application:
+    name: loveqq-dubbo-example
+  protocol:
+    dubbo-protocol:
+      name: dubbo
+      port: 5000
+      serialization: fastjson2                          # 默认使用 fastjson2，其他需要自行添加依赖
+  registry:
+    nacos-registry:
+      address: nacos://127.0.0.1:8848
+      username: nacos
+      password: 123456
+      group: DEFAULT_GROUP
+      parameters:
+        namespace: 31f714e4-f8d3-440a-bf6f-d9e79d2af2f7
+  configCenter:
+    nacos-center:
+      address: ${dubbo.registry.nacos-registry.address}
+      username: ${dubbo.registry.nacos-registry.username}
+      password: ${dubbo.registry.nacos-registry.password}
+      group: ${dubbo.registry.nacos-registry.group}
+      namespace: ${dubbo.registry.nacos-registry.parameters.namespace}

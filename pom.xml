@@ -18,6 +18,7 @@
         <module>loveqq-framework-nacos-example</module>
         <module>loveqq-framework-web-example</module>
         <module>loveqq-framework-mybatis-example</module>
+        <module>loveqq-framework-dubbo-example</module>
         <module>loveqq-framework-feign-example</module>
         <module>loveqq-framework-boot-common</module>
         <module>loveqq-framework-quartz-example</module>
