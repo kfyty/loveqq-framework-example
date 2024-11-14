@@ -1,0 +1,9 @@
+k:
+  feign:
+    config:
+      userFeignClient:
+        connectTimeout: 3000
+        readTimeout: 9000
+    ribbon:
+      loveqq-framework-example:
+        PoolMaxThreads: 100
