@@ -20,7 +20,7 @@ public class RpcController {
     @Autowired
     private RpcUserServiceImpl nativeUerService;
 
-    @DubboReference
+    @DubboReference(version = "2.0")
     private RpcUserService rpcUserService;
 
     @GetMapping

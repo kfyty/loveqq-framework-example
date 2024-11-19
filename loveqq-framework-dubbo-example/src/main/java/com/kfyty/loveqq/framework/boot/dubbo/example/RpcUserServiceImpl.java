@@ -10,7 +10,7 @@ import org.apache.dubbo.config.annotation.DubboService;
  * @date 2024/8/2 17:07
  * @email kfyty725@hotmail.com
  */
-@DubboService
+@DubboService(version = "2.0")
 public class RpcUserServiceImpl implements RpcUserService {
 
     @Override
