@@ -13,6 +13,9 @@ k:
     netty:
       accessLog: false
 
+rocketmq:
+  endpoints: 127.0.0.1:28081    # 对应 rmq-proxy.json#grpcServerPort
+
 template:
   thymeleaf:
     prefix: /template/
