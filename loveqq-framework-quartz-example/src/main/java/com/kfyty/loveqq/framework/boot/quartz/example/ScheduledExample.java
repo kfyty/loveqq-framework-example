@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
  * @email kfyty725@hotmail.com
  */
 @Slf4j
+@Scheduled
 @Component
 public class ScheduledExample {
     /**
